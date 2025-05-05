@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import { products } from '../dummy/products';
 
 
 
@@ -11,7 +11,7 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
       {cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        cart.map((item) => (
+        products.map((item) => (
           <div key={item.id} className="cart-item">
             <img src={item.image} alt={item.name} />
             <div className="cart-item-info">

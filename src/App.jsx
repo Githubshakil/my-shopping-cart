@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import Cart from './components/Cart';
 import ProductList from './components/ProductList';
+import { products } from './dummy/products';
 function App() {
    const [cart, setCart] = useState([]);
    
