@@ -39,7 +39,7 @@ function App() {
   };
   return(
 <>
-    <div>
+    <div className='shopping-cart'>
       <ProductList products={products} addToCart={addToCart} />
       <Cart cart={cart} removeFromCart={removeFromCart} changeQuantity={changeQuantity} />
     </div>

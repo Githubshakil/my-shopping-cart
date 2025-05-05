@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+
 const Cart = ({ cart, changeQuantity, removeFromCart }) => {
 
   return (
@@ -10,7 +13,7 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
       ) : (
         cart.map((item) => (
           <div key={item.id} className="cart-item">
-            <img src={item.Image} alt={item.name} />
+            <img src={item.image} alt={item.name} />
             <div className="cart-item-info">
               <h2>{item.name}</h2>
               <p>
