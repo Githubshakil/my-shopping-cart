@@ -1,25 +1,22 @@
-import React from 'react'
-import { products } from '../data/products'
+import React from "react";
+
 const ProductList = () => {
   return (
     <>
-        <div className="product-list">
-      {products.map((product) => (
-        <div key={product.id} className="product">
-          <img src={product.Image} alt={product.name} />
-          <div className="product-info">
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <button onClick={() => addToCart(product)}>Add To Cart</button>
+      <div className="product-list">
+        {products.map((product) => (
+          <div key={product.id} className="product">
+            <img src={product.image} alt={product.name} />
+            <div className="product-info">
+              <h2>{product.name}</h2>
+              <p>{product.description}</p>
+              <button onClick={() => addToCart(product)}>Add To Cart</button>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  );
-
-
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;
